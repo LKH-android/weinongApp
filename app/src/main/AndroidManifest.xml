@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.john.weinong">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    //储存卡的读写权限
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //调用相机权限
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/weinongicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/weinongicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="DiQ9ggCMpvzSVqGU0toGBv8bOKtxyZZo" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".StartActivity"
+            android:theme="@style/TranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".SearchShopActivity"
+            android:theme="@style/TranslucentTheme"/>
+        <activity android:name=".locationMainActivity"
+            android:theme="@style/TranslucentTheme"/>
+        <activity android:name=".WeatherActivity"
+            android:theme="@style/TranslucentTheme"/>
+        <activity android:name=".NewsActivity"
+            android:theme="@style/TranslucentTheme"/>
+        <activity android:name=".newsweb"
+            android:theme="@style/TranslucentTheme"/>
+        <activity android:name=".WeixingActivity"
+            android:theme="@style/TranslucentTheme"/>
+        <activity
+            android:name=".Tianxiangqing"
+            android:theme="@style/TranslucentTheme"
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".BianjitianActivity"
+            android:theme="@style/TranslucentTheme"/>
+        <activity android:name=".NewnongshiActivityput"
+            android:theme="@style/TranslucentTheme"/>
+        <activity android:name=".NongshitimelineActivity"
+            android:theme="@style/TranslucentTheme"/>
+        <activity android:name=".UserSginupPasswordAndSmsActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".XiugainameActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".XiugaipasswordActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".XiugaitouxiangActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".ShezhiActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".DengluActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".GuanyuweinongActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".NngshixiangqingActivity"
+            android:theme="@style/TranslucentTheme"
+            ></activity>
+        <activity android:name="com.donkingliang.imageselector.ImageSelectorActivity"
+
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        //图片预览Activity
+        <activity android:name="com.donkingliang.imageselector.PreviewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        //图片剪切Activity
+        <activity
+            android:name="com.donkingliang.imageselector.ClipImageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- Android 7.0 文件共享配置，必须配置 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

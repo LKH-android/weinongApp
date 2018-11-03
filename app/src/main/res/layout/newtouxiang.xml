@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/xiugaitouxioangbiaoti"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#0a8f08">
+
+            <ImageView
+                android:id="@+id/xiugaitouxiangimageview_person_back"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="修改头像"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/xiugaitouxianglayout_mine_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xiugaitouxioangbiaoti"
+            android:background="@drawable/actionsheet_bottom_normal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/xiugaitouxiangcircleimageview_mine_photo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingLeft="6dp"
+                android:src="@drawable/demon1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="53dp"
+                android:layout_toEndOf="@+id/xiugaitouxiangcircleimageview_mine_photo"
+                android:text="点击修改头像" />
+
+            <ImageView
+                android:id="@+id/iv_tuichu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="12dp"
+                android:src="@mipmap/right" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/xiugaitouxiangquereng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape03"
+            android:layout_alignParentBottom="true"
+            android:text="确定"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

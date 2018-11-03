@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+
+  >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/onelandnongshiitem"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/onenongshioperationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/onenongshirlTimeline"
+        android:layout_width="32dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/onenongshitvTopLine"
+            android:layout_width="0.5dp"
+            android:layout_height="12dp"
+            android:layout_centerHorizontal="true"
+            android:background="#999" />
+
+        <TextView
+            android:id="@+id/onenongshitvDot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/tvTopLine"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/timelline_dot_normal" />
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/onenongshitvDot"
+            android:paddingTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#999" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/onenongshirlCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="6dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/onenongshitvAcceptTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="农事类型："
+            android:textColor="#999"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/onenongshiwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/onenongshitvAcceptTitle"
+            android:layout_toEndOf="@+id/onenongshitvAcceptTitle"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/onenongshitvAcceptText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/onenongshitvAcceptTitle"
+            android:paddingTop="5dp"
+            android:text="详情："
+            android:textColor="#999"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/onenongshidetailedactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/onenongshitvAcceptText"
+            android:layout_alignBottom="@+id/onenongshitvAcceptText"
+            android:layout_toEndOf="@+id/onenongshitvAcceptText"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/btnnongshiDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:text="删除"
+        android:textColor="@android:color/white"/>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

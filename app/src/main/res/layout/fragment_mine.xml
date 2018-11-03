@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content"
+        >
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_mine_personal"
+        android:layout_width="match_parent"
+        android:background="@drawable/backgroundtwo"
+        android:layout_height="240dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleimageview_mine_photo"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/demon1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textview_mine_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/circleimageview_mine_photo"
+            android:layout_centerHorizontal="true"
+            android:text="点击登录"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/layout_mine_guanyuweinong"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/actionsheet_bottom_normal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:text="关于微农" />
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:src="@mipmap/right" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/layout_mine_call"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/actionsheet_bottom_normal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:text="联系客服" />
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:src="@mipmap/right" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/layout_mine_shezhi"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/actionsheet_bottom_normal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:textSize="17sp"
+            android:text=" 设         置" />
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:src="@mipmap/right" />-->
+    </RelativeLayout>
+
+
+</LinearLayout>
