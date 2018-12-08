@@ -13,11 +13,11 @@ import android.widget.ProgressBar;
 /**
  * Created by john on 2018/9/12.
  */
-
+//显示新闻详情的webview
 public class newsweb extends Activity {
     private WebView webView;
     private String geturl;
-    private ProgressBar pg1;
+    private ProgressBar pg1;//进度条
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -17,7 +17,7 @@ import cn.bmob.v3.listener.SaveListener;
 /**
  * Created by john on 2018/10/18.
  */
-
+//登陆activity
 public class DengluActivity extends AppCompatActivity {
     private EditText username;
     private EditText password;

@@ -9,7 +9,7 @@ import android.widget.ImageView;
 /**
  * Created by john on 2018/10/18.
  */
-
+//关于微农activity
 public class GuanyuweinongActivity extends AppCompatActivity {
     private ImageView backimageView;
     @Override

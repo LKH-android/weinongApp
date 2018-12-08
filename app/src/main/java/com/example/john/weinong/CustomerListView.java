@@ -3,7 +3,7 @@ package com.example.john.weinong;
 /**
  * Created by john on 2018/9/4.
  */
-
+//搜索历史
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ListView;

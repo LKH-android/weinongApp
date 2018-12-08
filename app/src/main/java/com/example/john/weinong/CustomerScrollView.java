@@ -13,7 +13,7 @@ import android.widget.ScrollView;
 
 /**
  * 增加ScrollView控件的弹簧效果
- *
+ *搜索历史
  */
 public class CustomerScrollView extends ScrollView {
 

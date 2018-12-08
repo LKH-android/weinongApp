@@ -47,7 +47,7 @@ import cn.bmob.v3.listener.UploadBatchListener;
 /**
  * Created by john on 2018/10/15.
  */
-
+//农事发布activity
 public class NewnongshiActivityput extends AppCompatActivity {
     private Spinner spDown;
     private List<String> data_list;

@@ -3,10 +3,7 @@ package com.example.john.weinong;
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 
-/**
- * Created by john on 2018/10/22.
- */
-
+//首页新闻recycleview样式
 public class CustomLinearLayoutManager extends LinearLayoutManager {
     private boolean isScrollEnabled = true;
     public CustomLinearLayoutManager(Context context) {

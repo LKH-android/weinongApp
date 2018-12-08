@@ -30,7 +30,7 @@ import okhttp3.Response;
 /**
  * Created by john on 2018/8/22.
  */
-
+//定位地区选择碎片
 public class ChooseAreaFragment extends Fragment {
     public static final int LEVEL_PROVINCE=0;
     public static final int LEVEL_CITY=1;

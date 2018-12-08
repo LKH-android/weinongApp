@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by john on 2018/9/10.
  */
-
+//新闻json的解析类
 public class NewsBean {
     /**
      * ret_code : 0

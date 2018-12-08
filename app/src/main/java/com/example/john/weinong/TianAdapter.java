@@ -144,4 +144,5 @@ public class TianAdapter extends RecyclerView.Adapter<TianAdapter.ViewHolder> {
         notifyItemRemoved(position);
         notifyDataSetChanged();
     }
+
 }

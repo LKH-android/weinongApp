@@ -31,7 +31,7 @@ import java.util.List;
 /**
  * Created by john on 2018/9/11.
  */
-
+//新闻界面
 public class NewsActivity extends AppCompatActivity implements HideScrollListener{
     private RecyclerView recyclerView;
     private ImageButton fab;

@@ -6,7 +6,7 @@ import android.widget.Button;
 /**
  * Created by john on 2018/10/28.
  */
-
+//重新发送验证码倒计时辅助类
 public class CountDownUtil extends CountDownTimer {
     private Button mButton;
     //参数说明 button 就是你要实现点击的那个按钮  第二个是你设设置的总时间 第三个参数是间隔时间

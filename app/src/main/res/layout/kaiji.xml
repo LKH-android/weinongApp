@@ -10,5 +10,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        app:srcCompat="@mipmap/forkai" />
+        android:background="@drawable/forkai"/>
 </LinearLayout>

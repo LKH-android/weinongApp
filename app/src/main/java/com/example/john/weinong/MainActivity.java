@@ -11,7 +11,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-
+//主界面
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private  Fragment1 fragment1;

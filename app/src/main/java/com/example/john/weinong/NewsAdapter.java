@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by john on 2018/9/11.
  */
-
+//新闻recycleview的适配器
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> implements View.OnClickListener{
     public Context mContext;
     private OnRecyclerviewItemClickListener mOnRecyclerviewItemClickListener = null;

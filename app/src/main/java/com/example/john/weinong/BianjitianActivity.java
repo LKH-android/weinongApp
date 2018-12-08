@@ -52,7 +52,7 @@ import cn.bmob.v3.listener.UpdateListener;
 /**
  * Created by john on 2018/10/12.
  */
-
+//编辑田
 public class BianjitianActivity extends AppCompatActivity {
     private MapView mapView;
     private EditText editText;

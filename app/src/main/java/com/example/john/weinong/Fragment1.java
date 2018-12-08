@@ -363,7 +363,7 @@ view.setOnClickListener(new View.OnClickListener() {
                         .addTextPara("maxResult", "10")
                         .addTextPara("needAllList","0")
                         .post();
-
+                System.out.println(res);
                  com.alibaba.fastjson.JSONObject js=com.alibaba.fastjson.JSONObject.parseObject(res);
                if(String.valueOf(js.getJSONArray("ret_code")).equals("null"))
                 {

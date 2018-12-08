@@ -3,11 +3,9 @@ package com.example.john.weinong;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import java.io.File;
@@ -63,7 +61,7 @@ public class NongshiphotoAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             });
         } else if (holder instanceof ViewHolder) {
 
-                final String image = mImages.get(position-1);
+                final String image = mImages.get(position);
                 Glide.with(mContext).load(new File(image)).into(((ViewHolder) holder).ivImage);
 
         }
@@ -74,9 +72,8 @@ public class NongshiphotoAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public int getItemViewType(int position) {
 
-        switch (position) {
-            case 0:
-                return ITEM_TYPE.ITEM1.ordinal();
+        if(position+1==getItemCount()) {
+            return ITEM_TYPE.ITEM1.ordinal();
         }
         return ITEM_TYPE.ITEM2.ordinal();
 
